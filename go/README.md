@@ -7,6 +7,11 @@ For a basic use, see into each example main.go.
 ## Examples
 - Currency 
 
+## Testing
+```cassandraql
+go test ./...  
+```
+
 ## Development
 Project structure
 
