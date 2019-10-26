@@ -1,4 +1,5 @@
 # GoLang code
+Changing Golang code from JAVA code in books examples
 
 ## Usage
 For a basic use, see into each example main.go.
