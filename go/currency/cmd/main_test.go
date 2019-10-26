@@ -7,15 +7,13 @@ import (
 )
 
 func TestMultiplication(t *testing.T) {
-	five := d.Dollar{Amount: 5}
-	product := five.Times(2)
-	assert.Equal(t, 10, product.Amount)
-	product = five.Times(3)
-	assert.Equal(t, 15, product.Amount)
+	five := d.NewDollar(5)
+	assert.Equal(t, d.NewDollar(10), five.Times(2))
+	assert.Equal(t, d.NewDollar(15), five.Times(3))
 }
 
 func TestEquality(t *testing.T) {
-	five := d.Dollar{Amount: 5}
-	assert.True(t, five.Equals(d.Dollar{Amount: 5}))
-	assert.False(t, five.Equals(d.Dollar{Amount: 6}))
+	five := d.NewDollar(5)
+	assert.True(t, five.Equals(d.NewDollar(5)))
+	assert.False(t, five.Equals(d.NewDollar(6)))
 }

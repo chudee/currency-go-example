@@ -82,3 +82,26 @@ The general TDD cycle was like next.
 - I easy implemented the operation.
 - I did more testing instead of refactoring right now.
 - I refactored to accommodate both cases.
+
+---
+
+### Chapter 4. Privacy
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- ~~__making amount to private__~~
+- ~~side effect Dollar?~~
+- Money rounding?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+
+#### Examine
+
+- I used developed functions to improve test.
+- I recognized that if both tests fail at the same time, it will broke.
+- I continued even though there were risks.
+- I used new function for the object to test becouse should to lower coupling between test and code.
