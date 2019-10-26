@@ -7,3 +7,7 @@ type Dollar struct {
 func (d *Dollar) Times(multiplier int) Dollar {
 	return Dollar{Amount: d.Amount * multiplier}
 }
+
+func (d *Dollar) Equals(dollar Dollar) bool {
+	return d.Amount == dollar.Amount
+}

@@ -1,8 +1,40 @@
 # Currency example
 
+## Purpose
+
+```cassandraql  
++----------+------------+---------+---------+
+|  stocks  |  qualtity  |  price  |   sum   |
++-------------------------------------------+
+|   IBM    |    1000    |    25   |  25000  |
++-------------------------------------------+
+|    GE    |     400    |   100   |  40000  |
++-------------------------------------------+
+|          |            |  total  |  65000  |
++----------+------------+---------+---------+
+
+
++----------+------------+---------+-----------+
+|  stocks  |  qualtity  |  price  |   sum     |
++---------------------------------------------+
+|   IBM    |    1000    |  25USD  |  25000USD |
++---------------------------------------------+
+| No|artis |     400    | 150CHF  |  60000CHF |
++---------------------------------------------+
+|          |            |  total  |  65000USD |
++----------+------------+---------+-----------+
+
+
++----------+------------+---------------+
+| standard | conversion | Exchange Rate |
++---------------------------------------+
+|   CHF    |    USD     |      1.5      |
++----------+------------+---------------+
+```
+
 ### Chapter 1. Money Objects That Support Multiple Currencies
 
-### TODO list
+#### TODO list
 
 - $5  + 10CHF = $10 (If the exchange rate is 2:1)
 - ~~__$5 x 2 = $10__~~
@@ -19,10 +51,34 @@ The general TDD cycle was like next.
 2. Make it executable
 3. Make it right
 
-### TODO list
+#### TODO list
 
 - $5  + 10CHF = $10 (If the exchange rate is 2:1)
 - ~~$5 x 2 = $10~~
 - making amount to private
 - ~~__side effect Dollar?__~~
 - Money rounding?
+
+---
+
+### Chapter 3. Peace for everyone
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- making amount to private
+- ~~side effect Dollar?~~
+- Money rounding?
+- ~~__equals()__~~
+- hashCode()
+- Equal null
+- Equal object
+
+#### Examine
+
+- we noticed that the design pattern(object value) implies another operation.
+- I tested the operation.
+- I easy implemented the operation.
+- I did more testing instead of refactoring right now.
+- I refactored to accommodate both cases.
