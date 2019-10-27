@@ -20,7 +20,8 @@ func TestFrancMultiplication(t *testing.T) {
 }
 
 func TestEquality(t *testing.T) {
-	five := d.NewDollar(5)
-	assert.True(t, five.Equals(d.NewDollar(5)))
-	assert.False(t, five.Equals(d.NewDollar(6)))
+	assert.True(t, d.NewDollar(5).Equals(&d.NewDollar(5).Money))
+	assert.False(t, d.NewDollar(5).Equals(&d.NewDollar(6).Money))
+	assert.True(t, f.NewFranc(5).Equals(&f.NewFranc(5).Money))
+	assert.False(t, f.NewFranc(5).Equals(&f.NewFranc(6).Money))
 }

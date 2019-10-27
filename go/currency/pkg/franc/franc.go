@@ -1,17 +1,15 @@
 package franc
 
+import m "github.com/chudee/currency-go-example/go/currency/pkg/money"
+
 type Franc struct {
-	amount int
+	m.Money
 }
 
 func NewFranc(amount int) *Franc {
-	return &Franc{amount}
+	return &Franc{m.Money{amount}}
 }
 
 func (f *Franc) Times(multiplier int) *Franc {
-	return NewFranc(f.amount * multiplier)
-}
-
-func (f *Franc) Equals(franc Franc) bool {
-	return f.amount == franc.amount
+	return NewFranc(f.Amount * multiplier)
 }

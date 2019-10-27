@@ -133,3 +133,28 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - Shamelessly I create duplicates and fixed a test a bit and created it.
 - To make matters worse, I duplicate model code to Money and fixed a test and passed it.
 - I promised not to go home until the duplicate disappeared.
+
+
+## Chapter 6. came back 'Peace for everyone'
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- ~~making amount to private~~
+- ~~side effect Dollar?~~
+- Money rounding?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+- ~~5CHF x 2 = 10CHF~~
+- duplicates Dollar/Franc
+- ~~__common equals__~~
+- common times
+
+#### Examine
+
+- I moved common code to superclass(Money) from First class(Dollar) gradually.
+- I made Second class(Franc) to subclass of Money.
+- before removing unnecessary implementations, I matched both equal() implementations.
