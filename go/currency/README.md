@@ -158,3 +158,47 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - I moved common code to superclass(Money) from First class(Dollar) gradually.
 - I made Second class(Franc) to subclass of Money.
 - before removing unnecessary implementations, I matched both equal() implementations.
+
+
+## Chapter 7. Apple and Orange
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- ~~making amount to private~~
+- ~~side effect Dollar?~~
+- Money rounding?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+- ~~5CHF x 2 = 10CHF~~
+- duplicates Dollar/Franc
+- ~~common equals~~
+- common times
+- ~~__compare Dollar with Franc__~~
+- currency?
+
+#### Examine
+
+- I pulled out flaw harassing us and put it in the test.
+- Not perfect but I made it pass a test looking good way.
+- Before there were more motivations, I didn't introduce more designs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
