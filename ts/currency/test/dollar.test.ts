@@ -7,3 +7,9 @@ test('TestMultiplication', () => {
   product = five.times(3);
   expect(product.amount).toBe(15);
 });
+
+test('TestEquality', () => {
+  const five = new Dollar(5);
+  expect(true).toBe(five.equals(new Dollar(5)));
+  expect(false).toBe(five.equals(new Dollar(6)));
+});

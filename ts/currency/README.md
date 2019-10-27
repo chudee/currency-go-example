@@ -60,3 +60,27 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - making amount to private
 - ~~__side effect Dollar?__~~
 - Money rounding?
+
+---
+
+### Chapter 3. Peace for everyone
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- making amount to private
+- ~~side effect Dollar?~~
+- Money rounding?
+- ~~__equals()__~~
+- hashCode()
+- Equal null
+- Equal object
+
+#### Examine
+
+- we noticed that the design pattern(object value) implies another operation.
+- I tested the operation.
+- I easy implemented the operation.
+- I did more testing instead of refactoring right now.
+- I refactored to accommodate both cases.
