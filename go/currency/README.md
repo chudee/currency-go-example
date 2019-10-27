@@ -161,6 +161,7 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - I made Second class(Franc) to subclass of Money.
 - before removing unnecessary implementations, I matched both equal() implementations.
 
+--
 
 ## Chapter 7. Apple and Orange
 

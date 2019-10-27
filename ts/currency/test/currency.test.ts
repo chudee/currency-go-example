@@ -14,7 +14,8 @@ test('TestFrancMultiplication', () => {
 });
 
 test('TestEquality', () => {
-  const five = new Dollar(5);
-  expect(true).toBe(five.equals(new Dollar(5)));
-  expect(false).toBe(five.equals(new Dollar(6)));
+  expect(true).toEqual(new Dollar(5).equals(new Dollar(5)));
+  expect(false).toBe(new Dollar(5).equals(new Dollar(6)));
+  expect(true).toBe(new Franc(5).equals(new Franc(5)));
+  expect(false).toBe(new Franc(5).equals(new Franc(6)));
 });
