@@ -9,7 +9,7 @@ export default class Dollar {
     return new Dollar( this.amount * multiplier)
   }
 
-  equals(dollar: Dollar) {
+  equals(dollar: Dollar): boolean {
     return this.amount === dollar.amount;
   }
 }

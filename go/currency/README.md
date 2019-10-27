@@ -135,6 +135,7 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - To make matters worse, I duplicate model code to Money and fixed a test and passed it.
 - I promised not to go home until the duplicate disappeared.
 
+---
 
 ## Chapter 6. came back 'Peace for everyone'
 
