@@ -1,7 +1,8 @@
 export default class Money {
-  protected amount: number;
+  constructor(protected amount: number) {}
 
   equals(money: Money): boolean {
-    return this.amount === money.amount;
+    return this.amount === money.amount
+        && this.constructor === money.constructor;
   }
 }
