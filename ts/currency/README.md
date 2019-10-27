@@ -41,3 +41,22 @@
 - making amount to private
 - side effect Dollar?
 - Money rounding?
+
+---
+
+### Chapter 2. Corrupted Object
+
+The general TDD cycle was like next. __(Do the following as if you're breathing)__
+1. Write a test
+2. Let it compile
+3. Make it executable
+4. Make it right
+5. Remove duplicates
+
+#### TODO list
+
+- $5  + 10CHF = $10 (If the exchange rate is 2:1)
+- ~~$5 x 2 = $10~~
+- making amount to private
+- ~~__side effect Dollar?__~~
+- Money rounding?
