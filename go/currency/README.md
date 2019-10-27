@@ -108,6 +108,7 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - I continued even though there were risks.
 - I used new function for the object to test becouse should to lower coupling between test and code.
 
+---
 
 ## Chapter 5. Franc-ly Speaking
 
