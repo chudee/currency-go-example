@@ -1,4 +1,4 @@
-import { Money, Expression, Bank } from '../src/currency';
+import { Money, Expression, Bank, Sum } from '../src/currency';
 
 test('TestMultiplication', () => {
   const five = Money.dollar(5);
@@ -29,4 +29,25 @@ test('TestSimpleAddition', () => {
   const bank: Bank = new Bank();
   const reduced: Money = bank.reduce(sum, 'USD');
   expect(Money.dollar(10)).toEqual(reduced);
+});
+
+test('TestPlusReturnsSum', () => {
+  const five: Money = Money.dollar(5);
+  const result: Expression = five.plus(five);
+  const sum: Sum = result as Sum;
+  expect(five).toEqual(sum._augend); // 덧셈의 첫 인자를 피가함수(augend)라고 한다.
+  expect(five).toEqual(sum._addend);
+});
+
+test('TestReduceSum', () => {
+  const sum: Expression = new Sum(Money.dollar(3), Money.dollar(4));
+  const bank: Bank = new Bank();
+  const result: Money = bank.reduce(sum, 'USD');
+  expect(Money.dollar(7)).toEqual(result);
+});
+
+test('TestReduceMoney', () => {
+  const bank: Bank = new Bank();
+  const result: Money = bank.reduce(Money.dollar(1), 'USD');
+  expect(Money.dollar(1)).toEqual(result);
 });

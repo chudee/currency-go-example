@@ -28,16 +28,40 @@ export class Money {
     return new Money( this._amount * multiplier, this._currency);
   }
 
-  plus(added: Money): Money {
-    return new Money(this._amount + added._amount, this._currency);
+  plus(addend: Money): Expression {
+    return new Sum(this, addend);
+  }
+
+  get amount() {
+    return this._amount;
+  }
+
+  reduce(to: string): Money {
+    return this;
   }
 }
 
 export interface Expression {
+  reduce: (to: string) => Money
 }
 
 export class Bank {
   reduce(source: Expression, to: string): Money {
-    return Money.dollar(10);
+    return source.reduce(to);
+  }
+}
+
+export class Sum implements Expression {
+  constructor(
+    public _augend: Money,
+    public _addend: Money
+  ) {
+    this._augend = _augend;
+    this._addend = _addend;
+  }
+
+  reduce(to: string): Money {
+    const amount: number = this._augend.amount + this._addend.amount;
+    return new Money(amount, to);
   }
 }

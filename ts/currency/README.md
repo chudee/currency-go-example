@@ -289,3 +289,17 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 
 - $5  + 10CHF = $10 (환율이 2:1일 경우)
 - __$5 + $5 = $10__
+
+
+--
+
+## Chapter 13. 진짜로 만들기
+
+#### TODO list
+
+- $5  + 10CHF = $10 (환율이 2:1일 경우기)
+- __$5 + $5 = $10__
+- $5 + $5에서 Mnoey 반환하기
+- ~~Bank.reduce(Money)~~
+- Money에 대한 통화 변환을 수행하는 Reduce
+- Reduce(Bank, String)
