@@ -1,4 +1,4 @@
-import { Money } from '../src/currency';
+import { Money, Franc } from '../src/currency';
 
 test('TestMultiplication', () => {
   const five = Money.dollar(5);
@@ -23,4 +23,8 @@ test('TestEquality', () => {
 test('TestCurrency', () => {
   expect('USD').toEqual(Money.dollar(1).currency());
   expect('CHF').toEqual(Money.franc(1).currency());
+});
+
+test('TestDifferentClassEquality', () => {
+  expect(true).toEqual(new Money(10, 'CHF').equals(new Franc(10, 'CHF')))
 });

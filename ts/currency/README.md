@@ -234,3 +234,26 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - ~~Dollar과 Franc 비교하기~~
 - ~~__통화?__~~
 - testFrancMultiplication을 지워야 할까?
+
+--
+
+## Chapter 10. 흥미로운 시간
+
+#### TODO list
+
+- $5  + 10CHF = $10 (환율이 2:1일 경우)
+- ~~$5 x 2 = $10~~
+- ~~amount를 private로 만들기~~
+- ~~Dollar 부작용?~~
+- Money 반올림?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+- ~~5CHF x 2 = 10CHF~~
+- ~~Dollar/Franc 중복~~
+- ~~공용 equals~~
+- __공용 times__
+- ~~Dollar과 Franc 비교하기~~
+- ~~통화?~~
+- testFrancMultiplication을 지워야 할까?
