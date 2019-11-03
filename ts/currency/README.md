@@ -188,3 +188,26 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - I pulled out flaw harassing us and put it in the test.
 - Not perfect but I made it pass a test looking good way.
 - Before there were more motivations, I didn't introduce more designs.
+
+--
+
+## Chapter 8. 객체 만들기  
+
+#### TODO list
+
+- $5  + 10CHF = $10 (환율이 2:1일 경우)
+- ~~$5 x 2 = $10~~
+- ~~amount를 private로 만들기~~
+- ~~Dollar 부작용?~~
+- Money 반올림?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+- ~~5CHF x 2 = 10CHF~~
+- ~~__Dollar/Franc 중복__~~
+- ~~공용 equals~~
+- 공용 times
+- ~~Dollar과 Franc 비교하기~~
+- 통화?
+- testFrancMultiplication을 지워야 할까?
