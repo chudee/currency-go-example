@@ -280,3 +280,12 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - ~~Dollar과 Franc 비교하기~~
 - ~~통화?~~
 - testFrancMultiplication을 지워야 할까?
+
+--
+
+## Chapter 12. 드디어, 더하기
+
+#### TODO list
+
+- $5  + 10CHF = $10 (환율이 2:1일 경우)
+- __$5 + $5 = $10__

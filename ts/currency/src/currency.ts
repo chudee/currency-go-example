@@ -27,4 +27,17 @@ export class Money {
   times(multiplier: number): Money {
     return new Money( this._amount * multiplier, this._currency);
   }
+
+  plus(added: Money): Money {
+    return new Money(this._amount + added._amount, this._currency);
+  }
+}
+
+export interface Expression {
+}
+
+export class Bank {
+  reduce(source: Expression, to: string): Money {
+    return Money.dollar(10);
+  }
 }
