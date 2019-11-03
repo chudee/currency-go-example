@@ -19,3 +19,8 @@ test('TestEquality', () => {
   expect(false).toEqual(Money.franc(5).equals(Money.franc(6)));
   expect(false).toEqual(Money.dollar(5).equals(Money.franc(5)));
 });
+
+test('TestCurrency', () => {
+  expect('USD').toEqual(Money.dollar(1).currency());
+  expect('CHF').toEqual(Money.franc(1).currency());
+});
