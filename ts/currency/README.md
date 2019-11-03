@@ -205,7 +205,7 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - Equal null
 - Equal object
 - ~~5CHF x 2 = 10CHF~~
-- ~~__Dollar/Franc 중복__~~
+- __Dollar/Franc 중복__
 - ~~공용 equals~~
 - 공용 times
 - ~~Dollar과 Franc 비교하기~~
@@ -228,7 +228,7 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - Equal null
 - Equal object
 - ~~5CHF x 2 = 10CHF~~
-- ~~Dollar/Franc 중복~~
+- Dollar/Franc 중복
 - ~~공용 equals~~
 - 공용 times
 - ~~Dollar과 Franc 비교하기~~
@@ -251,9 +251,32 @@ The general TDD cycle was like next. __(Do the following as if you're breathing)
 - Equal null
 - Equal object
 - ~~5CHF x 2 = 10CHF~~
-- ~~Dollar/Franc 중복~~
+- Dollar/Franc 중복
 - ~~공용 equals~~
 - __공용 times__
+- ~~Dollar과 Franc 비교하기~~
+- ~~통화?~~
+- testFrancMultiplication을 지워야 할까?
+
+--
+
+## Chapter 11. 모든 악의 근
+
+#### TODO list
+
+- $5  + 10CHF = $10 (환율이 2:1일 경우)
+- ~~$5 x 2 = $10~~
+- ~~amount를 private로 만들기~~
+- ~~Dollar 부작용?~~
+- Money 반올림?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
+- ~~5CHF x 2 = 10CHF~~
+- ~~__Dollar/Franc 중복__~~
+- ~~공용 equals~~
+- ~~공용 times~~
 - ~~Dollar과 Franc 비교하기~~
 - ~~통화?~~
 - testFrancMultiplication을 지워야 할까?
